@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>二亚洲无人区_荒野穿越影像_无人区纪录短片</title>
+<meta name="description" content="二亚洲无人区是一个专注荒野穿越影像与无人区纪录短片的视频品牌，提供穿越线路纪录、地质地貌解析、装备清单、创作者访谈与社区更新条目，适合越野与自然纪录爱好者。">
+<meta name="keywords" content="荒野穿越影像,无人区纪录短片,地质地貌解析,越野装备清单,自然纪录社区">
+<style>
+:root{
+  --bg:#0d1114;
+  --bg-soft:#131a1f;
+  --panel:#161f26;
+  --panel-2:#1b262e;
+  --line:#27343d;
+  --line-soft:#202b33;
+  --text:#e6ecef;
+  --text-2:#a8b6bf;
+  --text-3:#7d8c96;
+  --accent:#e8a54b;
+  --accent-2:#5fa8a0;
+  --accent-3:#c9603f;
+  --radius:10px;
+  --radius-lg:16px;
+  --shadow:0 8px 28px rgba(0,0,0,.35);
+  --sticky-h:96px;
+  --maxw:1340px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ===== sticky header group ===== */
+.sticky-group{position:sticky;top:0;z-index:60}
+.notice-bar{
+  background:linear-gradient(90deg,#1d2a33,#243440 60%,#1d2a33);
+  border-bottom:1px solid var(--line);
+  font-size:13px;color:var(--text-2);
+}
+.notice-inner{
+  max-width:var(--maxw);margin:0 auto;padding:7px 20px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+}
+.notice-dot{
+  width:7px;height:7px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 3px rgba(232,165,75,.18);flex:none;
+}
+.notice-inner strong{color:var(--accent);font-weight:600}
+.notice-inner a{margin-left:auto;color:var(--accent-2);font-weight:600;white-space:nowrap}
+.notice-inner a:hover{color:var(--accent)}
+
+.site-header{
+  background:rgba(13,17,20,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:var(--maxw);margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:24px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-mark{width:40px;height:40px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:.5px}
+.brand-sub{font-size:11px;color:var(--text-3);letter-spacing:1.6px;text-transform:uppercase}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
+.main-nav a{
+  padding:7px 11px;border-radius:8px;font-size:14px;color:var(--text-2);
+  transition:.18s;white-space:nowrap;
+}
+.main-nav a:hover{background:var(--panel-2);color:var(--text)}
+.header-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+.search-box{position:relative}
+.search-box input{
+  width:186px;padding:8px 12px 8px 32px;border-radius:8px;
+  border:1px solid var(--line);background:var(--panel);color:var(--text);
+  font-size:13px;transition:.2s;
+}
+.search-box input:focus{border-color:var(--accent-2);outline:none;width:210px}
+.search-box svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);opacity:.55}
+.btn-ghost{
+  padding:8px 14px;border-radius:8px;border:1px solid var(--line);
+  background:transparent;color:var(--text-2);font-size:13px;cursor:pointer;transition:.18s;
+}
+.btn-ghost:hover{border-color:var(--accent-2);color:var(--accent-2)}
+
+/* ===== hero ===== */
+.hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(1000px 420px at 82% -12%, rgba(232,165,75,.16), transparent 70%),
+    radial-gradient(760px 380px at 6% 108%, rgba(95,168,160,.14), transparent 70%),
+    #0b0f12;
+}
+.hero-inner{
+  max-width:var(--maxw);margin:0 auto;padding:52px 20px 46px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:2px;color:var(--accent);
+  border:1px solid rgba(232,165,75,.35);border-radius:999px;
+  padding:5px 13px;margin-bottom:20px;background:rgba(232,165,75,.07);
+}
+.hero h1{
+  font-size:clamp(34px,5vw,58px);letter-spacing:2px;font-weight:900;
+  background:linear-gradient(100deg,#fff 20%,#e8a54b 92%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:6px;
+}
+.hero-en{font-size:12px;letter-spacing:5px;color:var(--text-3);margin-bottom:18px}
+.hero-lead{font-size:16px;color:var(--text-2);max-width:520px;margin-bottom:24px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn-primary{
+  padding:11px 22px;border-radius:9px;background:var(--accent);color:#161010;
+  font-weight:700;font-size:14px;border:none;cursor:pointer;transition:.18s;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary:hover{background:#f0b862;transform:translateY(-1px)}
+.btn-outline{
+  padding:11px 22px;border-radius:9px;border:1px solid var(--line);
+  background:rgba(255,255,255,.02);color:var(--text);font-size:14px;font-weight:600;transition:.18s;
+}
+.btn-outline:hover{border-color:var(--accent-2);color:var(--accent-2)}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-size:23px;color:var(--accent);font-weight:800;line-height:1.2}
+.hero-stats span{font-size:12px;color:var(--text-3);letter-spacing:.5px}
+.hero-visual{position:relative;aspect-ratio:1/.92;min-height:280px}
+.hero-visual svg{width:100%;height:100%}
+.hero-badge{
+  position:absolute;bottom:14px;left:10px;right:10px;
+  background:rgba(13,17,20,.82);border:1px solid var(--line);
+  border-radius:10px;padding:10px 14px;font-size:12px;color:var(--text-2);
+  display:flex;justify-content:space-between;gap:12px;backdrop-filter:blur(6px);
+}
+.hero-badge b{color:var(--accent-2)}
+
+/* ===== layout ===== */
+.layout{
+  max-width:var(--maxw);margin:0 auto;padding:36px 20px 10px;
+  display:grid;grid-template-columns:186px minmax(0,1fr) 268px;gap:30px;
+  align-items:start;
+}
+.sidebar-left,.sidebar-right{position:sticky;top:calc(var(--sticky-h) + 14px);align-self:start}
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;margin-bottom:18px;
+}
+.side-title{
+  font-size:12px;letter-spacing:1.6px;color:var(--text-3);
+  text-transform:uppercase;margin-bottom:12px;font-weight:700;
+}
+.channel-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.channel-list a{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  padding:7px 9px;border-radius:7px;font-size:13.5px;color:var(--text-2);transition:.16s;
+}
+.channel-list a:hover{background:var(--panel-2);color:var(--accent)}
+.channel-list a span{font-size:11px;color:var(--text-3);font-variant-numeric:tabular-nums}
+
+/* ===== sections ===== */
+.section{margin-bottom:44px;scroll-margin-top:var(--sticky-h)}
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
+  padding-bottom:12px;margin-bottom:20px;border-bottom:1px solid var(--line-soft);
+  flex-wrap:wrap;
+}
+.section-head h2{
+  font-size:21px;letter-spacing:.6px;display:flex;align-items:center;gap:10px;
+}
+.section-head h2::before{
+  content:"";width:4px;height:19px;border-radius:2px;
+  background:linear-gradient(180deg,var(--accent),var(--accent-3));
+}
+.section-desc{font-size:13px;color:var(--text-3);margin:0}
+.section-more{font-size:13px;color:var(--accent-2);white-space:nowrap}
+.section-more:hover{color:var(--accent)}
+
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px;
+}
+.overview-text{font-size:14.6px;color:var(--text-2);line-height:1.95}
+.overview-text strong{color:var(--text);font-weight:600}
+.overview-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag{
+  display:inline-block;font-size:12px;padding:3px 9px;border-radius:6px;
+  background:rgba(95,168,160,.12);color:var(--accent-2);border:1px solid rgba(95,168,160,.24);
+}
+.tag.amber{background:rgba(232,165,75,.1);color:var(--accent);border-color:rgba(232,165,75,.26)}
+.tag.rust{background:rgba(201,96,63,.12);color:#e08a6d;border-color:rgba(201,96,63,.28)}
+.tag.plain{background:var(--panel-2);color:var(--text-3);border-color:var(--line)}
+
+/* cards */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.2s;
+}
+.card:hover{border-color:rgba(232,165,75,.42);transform:translateY(-3px);box-shadow:var(--shadow)}
+.card-thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--panel-2)}
+.card-thumb img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.card:hover .card-thumb img{transform:scale(1.05)}
+.card-type{
+  position:absolute;top:10px;left:10px;font-size:11px;padding:3px 8px;border-radius:5px;
+  background:rgba(13,17,20,.82);color:var(--accent);border:1px solid rgba(232,165,75,.4);
+  backdrop-filter:blur(4px);
+}
+.card-body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-title{font-size:15.5px;font-weight:700;letter-spacing:.3px}
+.card-desc{font-size:13px;color:var(--text-2);line-height:1.7;margin:0;flex:1}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px}
+.card-meta{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  font-size:12px;color:var(--text-3);padding-top:9px;border-top:1px dashed var(--line);
+}
+.card-meta .hot{color:var(--accent-3);font-weight:600}
+
+/* update list */
+.update-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.update-item{
+  display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:14px;align-items:baseline;
+  padding:13px 4px;border-bottom:1px dashed var(--line-soft);transition:.16s;
+}
+.update-item:last-child{border-bottom:none}
+.update-item:hover{background:rgba(255,255,255,.02)}
+.update-time{font-size:12px;color:var(--accent-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.update-title{font-size:14.5px;font-weight:600}
+.update-desc{font-size:12.8px;color:var(--text-3);margin:3px 0 0}
+.update-badge{font-size:11px;padding:2px 8px;border-radius:5px;background:var(--panel-2);color:var(--text-2);white-space:nowrap}
+
+/* category */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 15px;transition:.18s;display:flex;flex-direction:column;gap:5px;
+}
+.cat-card:hover{border-color:var(--accent-2);background:var(--panel-2)}
+.cat-card b{font-size:14.5px;font-weight:700}
+.cat-card span{font-size:12px;color:var(--text-3);line-height:1.5}
+.cat-count{font-size:11px;color:var(--accent);margin-top:4px}
+
+/* article */
+.article{font-size:14.8px;color:var(--text-2);line-height:1.95}
+.article h3{
+  font-size:17px;color:var(--text);margin:26px 0 12px;padding-left:12px;
+  border-left:3px solid var(--accent);letter-spacing:.4px;
+}
+.article h3:first-child{margin-top:0}
+.article p{margin-bottom:13px}
+.article ul li{margin-bottom:7px}
+.article strong{color:var(--text);font-weight:600}
+.compare{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 18px;
+}
+.compare-cell{
+  background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:13px 14px;
+}
+.compare-cell h4{font-size:13.5px;color:var(--accent);margin-bottom:7px}
+.compare-cell p{font-size:12.8px;color:var(--text-2);margin:0;line-height:1.7}
+
+/* steps */
+.step-list{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.step-list li{
+  counter-increment:step;display:grid;grid-template-columns:34px minmax(0,1fr);gap:13px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;align-items:start;
+}
+.step-list li::before{
+  content:counter(step,decimal-leading-zero);
+  font-size:14px;font-weight:800;color:var(--accent);letter-spacing:.5px;
+  border-right:1px solid var(--line);padding-right:10px;
+}
+.step-list b{display:block;font-size:14.5px;color:var(--text);margin-bottom:3px}
+.step-list span{font-size:13px;color:var(--text-2);line-height:1.7}
+
+/* faq */
+.faq-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  margin-bottom:10px;overflow:hidden;
+}
+.faq-item summary{
+  cursor:pointer;list-style:none;padding:14px 18px;font-size:14.5px;font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;transition:.16s;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{
+  content:"+";font-size:19px;color:var(--accent);font-weight:400;flex:none;transition:.2s;
+}
+.faq-item[open] summary::after{content:"−"}
+.faq-item summary:hover{background:var(--panel-2)}
+.faq-body{padding:0 18px 16px;font-size:13.6px;color:var(--text-2);line-height:1.85;border-top:1px solid var(--line-soft);padding-top:13px}
+
+/* comments */
+.comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.comment{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:13px 15px;
+}
+.comment-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-size:12px;font-weight:700;color:#12181c;
+}
+.comment-name{font-size:13px;font-weight:600}
+.comment-time{font-size:11px;color:var(--text-3);margin-left:auto}
+.comment p{font-size:13.2px;color:var(--text-2);margin:0;line-height:1.72}
+
+/* news */
+.news-list{display:grid;gap:14px}
+.news-item{
+  display:grid;grid-template-columns:132px minmax(0,1fr);gap:15px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:12px;transition:.18s;
+}
+.news-item:hover{border-color:rgba(95,168,160,.4)}
+.news-item img{width:132px;height:88px;object-fit:cover;border-radius:7px}
+.news-body h4{font-size:14.5px;margin-bottom:5px}
+.news-body time{font-size:11.5px;color:var(--accent-2);margin-right:8px}
+.news-body p{font-size:12.8px;color:var(--text-3);margin:0;line-height:1.65}
+
+/* tags index */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px}
+.tag-index a{
+  font-size:13px;padding:6px 13px;border-radius:999px;border:1px solid var(--line);
+  background:var(--panel);color:var(--text-2);transition:.16s;
+}
+.tag-index a:hover{border-color:var(--accent);color:var(--accent);background:rgba(232,165,75,.07)}
+
+/* ranking */
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rank}
+.rank-list li{
+  counter-increment:rank;display:grid;grid-template-columns:26px minmax(0,1fr) auto;
+  gap:12px;align-items:center;padding:11px 4px;border-bottom:1px dashed var(--line-soft);
+}
+.rank-list li:last-child{border-bottom:none}
+.rank-list li::before{
+  content:counter(rank);font-size:13px;font-weight:800;color:var(--text-3);
+  text-align:center;
+}
+.rank-list li:nth-child(-n+3)::before{color:var(--accent)}
+.rank-name{font-size:14px;font-weight:600}
+.rank-sub{font-size:12px;color:var(--text-3);margin-top:2px}
+.rank-score{font-size:13px;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* timeline */
+.timeline{position:relative;padding-left:20px;margin:0;list-style:none}
+.timeline::before{
+  content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--accent),var(--accent-2),transparent);
+}
+.timeline li{position:relative;padding:0 0 18px 14px}
+.timeline li::before{
+  content:"";position:absolute;left:-19px;top:7px;width:9px;height:9px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--accent);
+}
+.timeline time{font-size:11.5px;color:var(--accent-2);display:block;margin-bottom:3px;letter-spacing:.4px}
+.timeline b{font-size:14px;display:block;margin-bottom:3px}
+.timeline span{font-size:12.8px;color:var(--text-3);line-height:1.65}
+
+/* right sidebar */
+.hot-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+.hot-list li{display:flex;gap:10px;align-items:flex-start}
+.hot-idx{
+  width:19px;height:19px;border-radius:5px;flex:none;display:grid;place-items:center;
+  font-size:11px;font-weight:700;background:var(--panel-2);color:var(--text-3);
+}
+.hot-list li:nth-child(-n+3) .hot-idx{background:rgba(232,165,75,.16);color:var(--accent)}
+.hot-list b{font-size:13.2px;font-weight:600;display:block;line-height:1.45}
+.hot-list span{font-size:11.5px;color:var(--text-3)}
+.quote-card{
+  background:linear-gradient(150deg,var(--panel-2),var(--panel));
+  border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+  font-size:13px;color:var(--text-2);line-height:1.8;
+}
+.quote-card b{color:var(--accent);display:block;margin-top:10px;font-size:12px;letter-spacing:.5px}
+
+/* footer */
+.site-footer{
+  border-top:1px solid var(--line);background:#0a0d0f;margin-top:20px;
+}
+.footer-inner{
+  max-width:var(--maxw);margin:0 auto;padding:40px 20px 24px;
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;
+}
+.footer-brand .brand-name{font-size:17px;margin-bottom:8px}
+.footer-brand p{font-size:13px;color:var(--text-3);line-height:1.8;max-width:280px}
+.footer-col h4{font-size:13px;color:var(--text);margin-bottom:12px;letter-spacing:.6px}
+.footer-col a{
+  display:block;font-size:12.8px;color:var(--text-3);padding:3px 0;transition:.16s;
+}
+.footer-col a:hover{color:var(--accent-2)}
+.footer-bottom{
+  max-width:var(--maxw);margin:0 auto;padding:16px 20px 30px;
+  border-top:1px solid var(--line-soft);font-size:12px;color:var(--text-3);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+.search-empty{
+  display:none;padding:18px;text-align:center;color:var(--text-3);font-size:13.5px;
+  border:1px dashed var(--line);border-radius:var(--radius);
+}
+body.searching .card[data-hidden="1"]{display:none}
+body.searching .search-empty.show{display:block}
+
+/* responsive */
+@media (max-width:1120px){
+  .layout{grid-template-columns:172px minmax(0,1fr);gap:24px}
+  .sidebar-right{position:static;grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .sidebar-right .side-card{margin-bottom:0}
+}
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:30px}
+  .hero-visual{max-width:440px;margin:0 auto;width:100%}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-inner{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .sidebar-left{position:static}
+  .channel-list{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .channel-list a{background:var(--panel-2);font-size:13px;padding:6px 11px}
+  .sidebar-right{grid-column:auto;grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+}
+@media (max-width:740px){
+  .header-inner{padding:10px 14px;gap:12px}
+  .main-nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+  .header-actions{margin-left:0;width:100%;order:2}
+  .search-box{flex:1}
+  .search-box input{width:100%}
+  .search-box input:focus{width:100%}
+  .layout{padding:24px 14px 8px}
+  .hero-inner{padding:34px 14px 32px}
+  .card-grid{grid-template-columns:1fr}
+  .comment-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr}
+  .news-item{grid-template-columns:100px minmax(0,1fr)}
+  .news-item img{width:100px;height:74px}
+  .update-item{grid-template-columns:64px minmax(0,1fr);row-gap:4px}
+  .update-badge{grid-column:2;justify-self:start}
+  .footer-inner{grid-template-columns:1fr;gap:22px;padding:30px 14px 18px}
+  .footer-bottom{padding:14px 14px 26px}
+  .notice-inner{padding:7px 14px}
+  .notice-inner a{margin-left:0}
+  :root{--sticky-h:132px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="sticky-group">
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <span class="notice-dot" aria-hidden="true"></span>
+      <span><strong>本周新增 9 条穿越影像</strong>：可可西里冬季线路、羌塘南缘营地实录、罗布泊雅丹航拍解析已上线</span>
+      <a href="/#updates">查看更新条目 →</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/#top" aria-label="二亚洲无人区 首页">
+        <svg class="brand-mark" viewBox="0 0 48 48" role="img" aria-label="二亚洲无人区标志：山脊与镜头光圈">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="#e8a54b" stroke-width="1.6" opacity=".55"/>
+          <path d="M8 33 L18 17 L25 27 L31 20 L40 33 Z" fill="none" stroke="#5fa8a0" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="24" cy="24" r="7.6" fill="none" stroke="#e8a54b" stroke-width="1.8"/>
+          <circle cx="24" cy="24" r="2.4" fill="#e8a54b"/>
+          <path d="M8 33 H40" stroke="#e8a54b" stroke-width="1.4" opacity=".7"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">二亚洲无人区</span>
+          <span class="brand-sub">Wilderness Films</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选影像</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#categories">分类入口</a>
+        <a href="/#deepdive">深度解析</a>
+        <a href="/#guide">观看路径</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#community">社区评论</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a8b6bf" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+          </svg>
+          <input type="search" id="siteSearch" placeholder="搜索条目 / 线路 / 类型" aria-label="搜索影像条目">
+        </div>
+        <button class="btn-ghost" type="button" id="resetSearch">重置</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-eyebrow">荒野穿越影像 · 无人区纪录短片</span>
+        <h1 id="hero-title">二亚洲无人区</h1>
+        <p class="hero-en">ASIA NO-MAN'S LAND / FIELD RECORDS</p>
+        <p class="hero-lead">把镜头带进地图上的空白处——从可可西里到羌塘、从罗布泊雅丹到阿尔金山，记录穿越线路、营地生活、地质剖面与装备实测。每一条影像都标注拍摄时间、海拔区间与进入许可状态。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/#featured">
+            浏览精选影像
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn-outline" href="/#guide">观看顺序指南</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>418</b><span>已上线影像条目</span></div>
+          <div><b>27</b><span>覆盖穿越线路</span></div>
+          <div><b>11-25</b><span>最近更新日期</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 520 480" role="img" aria-label="无人区山脊与穿越车队构图插画">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1c2a33"/>
+              <stop offset="60%" stop-color="#141d23"/>
+              <stop offset="100%" stop-color="#0e1418"/>
+            </linearGradient>
+            <linearGradient id="ridge1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2c3f4a"/>
+              <stop offset="100%" stop-color="#1a262d"/>
+            </linearGradient>
+            <linearGradient id="ridge2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3a4e59"/>
+              <stop offset="100%" stop-color="#212f37"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="480" rx="18" fill="url(#sky)"/>
+          <circle cx="392" cy="104" r="46" fill="#e8a54b" opacity=".14"/>
+          <circle cx="392" cy="104" r="27" fill="#e8a54b" opacity=".55"/>
+          <path d="M0 300 L96 214 L166 268 L238 186 L318 272 L400 206 L520 300 L520 480 L0 480 Z" fill="url(#ridge1)"/>
+          <path d="M0 356 L84 300 L150 344 L236 282 L330 352 L418 296 L520 358 L520 480 L0 480 Z" fill="url(#ridge2)"/>
+          <path d="M0 412 L120 372 L232 408 L352 366 L520 410 L520 480 L0 480 Z" fill="#162026"/>
+          <path d="M0 412 L120 372 L232 408 L352 366 L520 410" fill="none" stroke="#5fa8a0" stroke-width="1.6" opacity=".55"/>
+          <g stroke="#e8a54b" stroke-width="1.4" opacity=".8">
+            <path d="M118 424 h44"/><path d="M140 410 v28"/>
+            <rect x="196" y="414" width="34" height="18" rx="3" fill="#e8a54b" opacity=".22"/>
+            <path d="M206 432 v-8 h14 v8"/>
+          </g>
+          <g opacity=".5" stroke="#a8b6bf" stroke-width="1">
+            <path d="M60 92 h30"/><path d="M330 60 h24"/><path d="M70 150 h18"/>
+          </g>
+          <text x="40" y="76" fill="#7d8c96" font-size="11" font-family="monospace" letter-spacing="2">ALT 4,980 M</text>
+          <text x="356" y="452" fill="#5fa8a0" font-size="11" font-family="monospace" letter-spacing="2">30°N / 90°E</text>
+        </svg>
+        <div class="hero-badge">
+          <span>今日主推：<b>羌塘南缘 11 月营地实录</b></span>
+          <span>26 分钟</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+
+    <!-- 左频道索引 -->
+    <aside class="sidebar-left" aria-label="频道索引">
+      <div class="side-card">
+        <div class="side-title">频道索引</div>
+        <ul class="channel-list">
+          <li><a href="/#featured">穿越线路纪录 <span>96</span></a></li>
+          <li><a href="/#featured">地质地貌解析 <span>74</span></a></li>
+          <li><a href="/#featured">营地与后勤 <span>58</span></a></li>
+          <li><a href="/#featured">越野装备实测 <span>63</span></a></li>
+          <li><a href="/#featured">野生动物观察 <span>41</span></a></li>
+          <li><a href="/#featured">星空与长曝光 <span>29</span></a></li>
+          <li><a href="/#featured">救援与应急预案 <span>33</span></a></li>
+          <li><a href="/#featured">创作者访谈 <span>24</span></a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <div class="side-title">进入许可状态</div>
+        <ul class="channel-list">
+          <li><a href="/#updates">可可西里保护区 <span>限流</span></a></li>
+          <li><a href="/#updates">羌塘国家级保护区 <span>禁入</span></a></li>
+          <li><a href="/#updates">罗布泊野骆驼保护区 <span>限流</span></a></li>
+          <li><a href="/#updates">阿尔金山试验区 <span>开放</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 主内容 -->
+    <div class="main-col">
+
+      <!-- 1. 领域概览 -->
+      <section class="section" id="overview" aria-labelledby="overview-title">
+        <div class="section-head">
+          <h2 id="overview-title">领域概览：无人区影像都在拍什么</h2>
+          <p class="section-desc">方向划分与当前值得关注的内容</p>
+        </div>
+        <div class="panel overview-text">
+          <p><strong>二亚洲无人区</strong>指向的是亚洲内陆高海拔与极端干旱地带中，人类长期定居点稀少的区域影像记录。这类内容通常分为几个稳定方向：一是<strong>穿越线路纪录</strong>，完整呈现从补给点进入、翻越达坂、穿越盐碱滩到撤出的全过程；二是<strong>地质地貌解析</strong>，用剖面和航拍讲清雅丹、冰川、冻土丘是怎么形成的；三是<strong>营地与后勤</strong>，涵盖水源寻找、燃油配比、高海拔炊事；四是<strong>越野装备实测</strong>，在低温、砂石、盐壳路面上检验轮胎、绞盘、车载电源。</p>
+          <p>当前值得关注的具体内容集中在冬季档：羌塘南缘 11 月营地实录记录了夜间 −22℃ 的帐篷保温方案；可可西里冬季线路影像首次公开了卓乃湖西侧的冰面通行判断过程；罗布泊雅丹航拍解析用 4K 素材标出了三处易陷车区域。此外，阿尔金山试验区的野生动物观察条目在 11 月更新了藏羚迁徙末期的观测点位。</p>
+          <p>观看这类影像的实用价值在于：它把地图上的空白处变成可参照的经验——哪个季节能进、哪种路面用什么胎压、遇险如何等待救援。相比纯风景大片，无人区纪录短片更强调可复现的过程与判断依据。</p>
+          <div class="overview-tags">
+            <span class="tag">穿越线路</span>
+            <span class="tag amber">地质剖面</span>
+            <span class="tag">高海拔营地</span>
+            <span class="tag rust">装备实测</span>
+            <span class="tag plain">进入许可</span>
+            <span class="tag plain">野生动物</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 精选影像 -->
+      <section class="section" id="featured" aria-labelledby="featured-title">
+        <div class="section-head">
+          <h2 id="featured-title">精选影像推荐</h2>
+          <p class="section-desc">9 条可直接观看的完整条目</p>
+          <a class="section-more" href="/#updates">按更新时间查看 →</a>
+        </div>
+        <div class="card-grid" id="cardGrid">
+
+          <article class="card" data-keywords="羌塘 南缘 营地 冬季 高海拔">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qiangtang-camp11/400/300" width="400" height="300" loading="lazy" alt="羌塘南缘冬季营地帐篷与车辆夜景">
+              <span class="card-type">营地实录</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">羌塘南缘 11 月营地实录</h3>
+              <p class="card-desc">记录 −22℃ 夜间营地搭建全过程：双层帐＋铝箔地垫的保温组合、柴油暖风机耗油实测、清晨结霜与炊事顺序，附完整装备表与拍摄时间戳。</p>
+              <div class="card-tags">
+                <span class="tag">高海拔营地</span><span class="tag plain">冬季</span><span class="tag plain">后勤</span>
+              </div>
+              <div class="card-meta"><span>2026-11-24 上线</span><span class="hot">热度 9.6</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="可可西里 冬季 线路 卓乃湖 冰面">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/kekexili-winter07/400/300" width="400" height="300" loading="lazy" alt="可可西里冬季冰封湖面与远山">
+              <span class="card-type">穿越线路</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">可可西里冬季线路：卓乃湖西侧</h3>
+              <p class="card-desc">完整呈现进入许可核验、冰面厚度打孔判断、车辆间隔通行规则。片中标注了三处历年通行风险点，并给出替代绕行方案。</p>
+              <div class="card-tags">
+                <span class="tag rust">冰面通行</span><span class="tag plain">线路纪录</span><span class="tag plain">许可</span>
+              </div>
+              <div class="card-meta"><span>2026-11-23 上线</span><span class="hot">热度 9.4</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="罗布泊 雅丹 航拍 陷车 地貌">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/lopnor-yadan12/400/300" width="400" height="300" loading="lazy" alt="罗布泊雅丹地貌航拍俯视图">
+              <span class="card-type">地貌解析</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">罗布泊雅丹航拍解析</h3>
+              <p class="card-desc">用 4K 俯拍素材逐段拆解雅丹垄槽走向，标出三处盐壳薄层易陷区，并解释为什么顺着垄脊走比横切更省油。</p>
+              <div class="card-tags">
+                <span class="tag amber">地质剖面</span><span class="tag plain">航拍</span><span class="tag plain">盐壳路</span>
+              </div>
+              <div class="card-meta"><span>2026-11-22 上线</span><span class="hot">热度 9.1</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="阿尔金山 藏羚 野生动物 观察 点位">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/altun-antelope05/400/300" width="400" height="300" loading="lazy" alt="阿尔金山试验区藏羚群在荒漠中行走">
+              <span class="card-type">野生动物</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">阿尔金山藏羚迁徙末期观察</h3>
+              <p class="card-desc">11 月中旬观测点位与安全观察距离说明，含长焦拍摄参数、车辆停靠朝向建议，以及避免惊群的三条现场准则。</p>
+              <div class="card-tags">
+                <span class="tag">观察点位</span><span class="tag plain">长焦</span><span class="tag plain">伦理距离</span>
+              </div>
+              <div class="card-meta"><span>2026-11-20 上线</span><span class="hot">热度 8.7</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="装备 实测 轮胎 胎压 绞盘 低温">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/gear-tire-test09/400/300" width="400" height="300" loading="lazy" alt="越野车在盐碱滩测试轮胎胎压">
+              <span class="card-type">装备实测</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">盐碱滩与砂石路胎压实测</h3>
+              <p class="card-desc">同一辆车在三种路面上的胎压对照：盐壳 1.4 bar、砂石 1.8 bar、冻土 2.0 bar，附绞盘低温启动失败后的两次补救操作。</p>
+              <div class="card-tags">
+                <span class="tag rust">胎压</span><span class="tag plain">绞盘</span><span class="tag plain">低温启动</span>
+              </div>
+              <div class="card-meta"><span>2026-11-19 上线</span><span class="hot">热度 8.9</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="星空 长曝光 银河 高海拔 拍摄">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/starfield-plateau03/400/300" width="400" height="300" loading="lazy" alt="高海拔无人区银河长曝光星空">
+              <span class="card-type">星空摄影</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">海拔 4,900 米银河长曝光</h3>
+              <p class="card-desc">讲解高海拔低气温下的电池保温、赤道仪调平、20 秒与 90 秒堆栈的差异，附当月银河中心升起时间表。</p>
+              <div class="card-tags">
+                <span class="tag">长曝光</span><span class="tag plain">银河</span><span class="tag plain">堆栈</span>
+              </div>
+              <div class="card-meta"><span>2026-11-17 上线</span><span class="hot">热度 8.2</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="救援 应急 预案 卫星电话 撤离">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/rescue-plan14/400/300" width="400" height="300" loading="lazy" alt="无人区应急撤离路线手绘标注">
+              <span class="card-type">应急方案</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">无人区救援预案推演</h3>
+              <p class="card-desc">以一次模拟车辆故障为例，演示卫星电话报点格式、72 小时物资分配、撤离路线优先级排序，附报点话术模板。</p>
+              <div class="card-tags">
+                <span class="tag rust">应急预案</span><span class="tag plain">卫星电话</span><span class="tag plain">撤离</span>
+              </div>
+              <div class="card-meta"><span>2026-11-15 上线</span><span class="hot">热度 8.5</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="创作者 访谈 拍摄 无人区 纪录片">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/director-talk21/400/300" width="400" height="300" loading="lazy" alt="纪录片创作者在营地接受访谈">
+              <span class="card-type">创作者访谈</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">拍无人区第七年：创作者访谈</h3>
+              <p class="card-desc">聊拍摄节奏与安全边界：什么镜头值得为它多待一天，什么情况下必须放弃素材撤出，以及如何与保护区管理方协作。</p>
+              <div class="card-tags">
+                <span class="tag">访谈</span><span class="tag plain">拍摄伦理</span><span class="tag plain">协作</span>
+              </div>
+              <div class="card-meta"><span>2026-11-13 上线</span><span class="hot">热度 8.0</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-keywords="冻土 丘 地质 剖面 讲解">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/tundra-mound08/400/300" width="400" height="300" loading="lazy" alt="冻土丘剖面与地表裂隙特写">
+              <span class="card-type">地貌解析</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">冻土丘是怎么长出来的</h3>
+              <p class="card-desc">从冻胀作用讲到地表裂隙，用三处实地剖面演示冻土丘的形成阶段，并说明为什么车辆应绕行而非碾压。</p>
+              <div class="card-tags">
+                <span class="tag amber">冻土</span><span class="tag plain">剖面</span><span class="tag plain">地表保护</span>
+              </div>
+              <div class="card-meta"><span>2026-11-10 上线</span><span class="hot">热度 7.8</span></div>
+            </div>
+          </article>
+
+        </div>
+        <div class="search-empty" id="searchEmpty">没有匹配的影像条目，试试「营地」「雅丹」「胎压」等关键词。</div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section" id="updates" aria-labelledby="updates-title">
+        <div class="section-head">
+          <h2 id="updates-title">最新更新与热播动态</h2>
+          <p class="section-desc">11 月 25 日前后条目变化</p>
+        </div>
+        <div class="panel" style="padding:10px 22px">
+          <ul class="update-list">
+            <li class="update-item">
+              <span class="update-time">今天 09:30</span>
+              <div>
+                <div class="update-title">羌塘南缘营地实录 · 第 3 集上线</div>
+                <p class="update-desc">新增清晨结霜段与柴油暖风机整夜耗油数据，片尾补装备清单表。</p>
+              </div>
+              <span class="update-badge">新集</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">今天 08:10</span>
+              <div>
+                <div class="update-title">可可西里保护区发布冬季限流公告</div>
+                <p class="update-desc">12 月起每日进入车辆上限调整为 30 台，需提前 5 个工作日报备。</p>
+              </div>
+              <span class="update-badge">规则</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">昨天 21:10</span>
+              <div>
+                <div class="update-title">罗布泊雅丹航拍解析 · 补充第三处易陷区</div>
+                <p class="update-desc">在盐壳薄层段落新增俯拍标注与绕行建议，时长增加 4 分 12 秒。</p>
+              </div>
+              <span class="update-badge">修订</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">昨天 16:40</span>
+              <div>
+                <div class="update-title">阿尔金山藏羚观察点位更新</div>
+                <p class="update-desc">迁徙末期群体向东南移动约 12 公里，原 3 号点位建议替换为 5 号。</p>
+              </div>
+              <span class="update-badge">点位</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">11 月 23 日</span>
+              <div>
+                <div class="update-title">盐碱滩胎压实测 · 加入冻土路面数据</div>
+                <p class="update-desc">补测冻土路段 2.0 bar 方案，并对比 1.6 bar 时的打滑概率。</p>
+              </div>
+              <span class="update-badge">实测</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">11 月 22 日</span>
+              <div>
+                <div class="update-title">无人区救援预案推演 · 上线报点话术模板</div>
+                <p class="update-desc">提供经纬度、海拔、伤员状态三段式报点格式，可直接抄录使用。</p>
+              </div>
+              <span class="update-badge">工具</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">11 月 20 日</span>
+              <div>
+                <div class="update-title">海拔 4,900 米银河长曝光 · 12 月星历更新</div>
+                <p class="update-desc">给出 12 月银河中心升起与天文暮光结束的每日时间区间。</p>
+              </div>
+              <span class="update-badge">星历</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">11 月 18 日</span>
+              <div>
+                <div class="update-title">社区讨论焦点：冬季单车进入是否可行</div>
+                <p class="update-desc">多数回复建议至少双车同行，并列出三条曾发生单车受困的具体线路。</p>
+              </div>
+              <span class="update-badge">讨论</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">11 月 16 日</span>
+              <div>
+                <div class="update-title">冻土丘是怎么长出来的 · 增加剖面动画</div>
+                <p class="update-desc">用 40 秒动画演示冻胀到裂隙的四个阶段，替代原静态示意图。</p>
+              </div>
+              <span class="update-badge">修订</span>
+            </li>
+            <li class="update-item">
+              <span class="update-time">11 月 14 日</span>
+              <div>
+                <div class="update-title">创作者访谈 · 补录拍摄伦理问答</div>
+                <p class="update-desc">新增关于距离控制与无人机高度的 6 分钟对话段落。</p>
+              </div>
+              <span class="update-badge">补录</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="categories" aria-labelledby="categories-title">
+        <div class="section-head">
+          <h2 id="categories-title">分类入口</h2>
+          <p class="section-desc">按内容类型与使用场景划分</p>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-card" href="/#featured"><b>穿越线路</b><span>从补给点到达坂的完整路径记录</span><span class="cat-count">96 条</span></a>
+          <a class="cat-card" href="/#featured"><b>地质地貌</b><span>雅丹、冰川、冻土丘成因讲解</span><span class="cat-count">74 条</span></a>
+          <a class="cat-card" href="/#featured"><b>营地后勤</b><span>水源、燃料、炊事与保温方案</span><span class="cat-count">58 条</span></a>
+          <a class="cat-card" href="/#featured"><b>装备实测</b><span>轮胎、绞盘、电源在极端路面的表现</span><span class="cat-count">63 条</span></a>
+          <a class="cat-card" href="/#featured"><b>野生动物</b><span>藏羚、野牦牛、藏野驴观察规范</span><span class="cat-count">41 条</span></a>
+          <a class="cat-card" href="/#featured"><b>星空摄影</b><span>长曝光、堆栈与星历时间表</span><span class="cat-count">29 条</span></a>
+          <a class="cat-card" href="/#featured"><b>救援应急</b><span>报点格式、物资分配、撤离排序</span><span class="cat-count">33 条</span></a>
+          <a class="cat-card" href="/#featured"><b>创作者访谈</b><span>拍摄节奏、伦理边界与协作经验</span><span class="cat-count">24 条</span></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section class="section" id="deepdive" aria-labelledby="deepdive-title">
+        <div class="section-head">
+          <h2 id="deepdive-title">深度解析：三类无人区影像的差别</h2>
+          <p class="section-desc">同样叫纪录短片，看的东西完全不同</p>
+        </div>
+        <div class="panel article">
+          <h3>线路纪录：看的是判断过程，不是风景</h3>
+          <p>穿越线路类影像的核心价值在于<strong>决策链条</strong>。一条合格的线路纪录会交代：进入前如何核验许可、在哪个坐标切换四驱、遇到盐壳薄层时选择绕行还是铺板、冰面打孔后读到多少厘米才允许通过。可可西里冬季线路里有一段被反复引用的素材——车队在卓乃湖西侧停车 18 分钟，只为等冰面厚度复测结果，这段"什么都没发生"的画面恰恰是这类内容最实用的部分。</p>
+          <p>判断一条线路纪录是否值得投入时间，可以看三个指标：是否标注了具体坐标与海拔、是否说明了当时的季节与天气、是否承认了失败或折返。只剪高光、不提撤退的片子，参考价值通常有限。</p>
+
+          <h3>地貌解析：把"好看"翻译成"为什么"</h3>
+          <p>地貌类内容面对的是同一个问题：观众看到了奇特的垄槽与土丘，但不知道它怎么来的。罗布泊雅丹航拍解析之所以被社区频繁引用，是因为它把雅丹垄槽走向和主导风向对应起来，再解释为什么顺着垄脊行车比横切更省油——地貌知识直接变成了驾驶策略。</p>
+          <p>冻土丘那一集同理。冻胀作用让地表隆起，隆起开裂后形成裂隙，车辆碾压会加速融化与塌陷。片中用三处实地剖面展示不同阶段的形态，观众下次在现场就能凭外观判断该不该绕。</p>
+
+          <h3>装备实测：条件是全部，结论是其次</h3>
+          <p>无人区环境下的装备评测，最容易出问题的地方是<strong>条件缺失</strong>。同一款轮胎在 1.4 bar 与 2.0 bar 下表现完全不同，同一个绞盘在 −5℃ 和 −22℃ 的启动成功率也不是一回事。盐碱滩胎压实测这一条之所以可信，是因为它把三种路面、两种气温、两次失败补救都拍了出来。</p>
+          <div class="compare">
+            <div class="compare-cell">
+              <h4>线路纪录 · 看什么</h4>
+              <p>坐标、海拔、季节、许可状态、折返原因。适合准备进入前的规划阶段。</p>
+            </div>
+            <div class="compare-cell">
+              <h4>地貌解析 · 看什么</h4>
+              <p>成因链条、现场辨识特征、对通行的影响。适合提升现场判断力。</p>
+            </div>
+            <div class="compare-cell">
+              <h4>装备实测 · 看什么</h4>
+              <p>测试条件、对照方案、失败记录。适合采购与配载前参考。</p>
+            </div>
+          </div>
+
+          <h3>三类内容如何互相补位</h3>
+          <ul>
+            <li><strong>规划期</strong>：先看线路纪录确定可行性与时间窗，再看许可状态确认能否进入。</li>
+            <li><strong>准备期</strong>：看装备实测确定胎压与备件，看营地后勤确定燃料与水源方案。</li>
+            <li><strong>现场期</strong>：地貌解析提供即时判断依据，救援预案提供兜底流程。</li>
+            <li><strong>复盘期</strong>：对照他人影像核对自己的判断偏差，尤其是折返决策。</li>
+          </ul>
+          <p>需要提醒的是，任何影像都不能替代实地勘察与官方通告。二亚洲无人区收录的条目均标注拍摄日期，读者在使用其中的数据时应先核对当季的保护区公告，因为限流规则与可通行区域会随季节调整。</p>
+        </div>
+      </section>
+
+      <!-- 6. 观看路径 -->
+      <section class="section" id="guide" aria-labelledby="guide-title">
+        <div class="section-head">
+          <h2 id="guide-title">观看路径：从哪一条开始</h2>
+          <p class="section-desc">按投入时间与目的排序</p>
+        </div>
+        <ol class="step-list">
+          <li>
+            <div>
+              <b>第一次接触：先看 20 分钟以内的单集</b>
+              <span>推荐《罗布泊雅丹航拍解析》，没有复杂后勤内容，节奏快，能快速建立对无人区地貌的直观印象。</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>想了解真实难度：看营地实录系列</b>
+              <span>《羌塘南缘 11 月营地实录》三集连看，重点不在风景，而在低温下每一项操作要花多久。</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>准备实际进入：线路纪录 + 许可公告对照看</b>
+              <span>先看《可可西里冬季线路》，再核对当季限流公告，两者时间不一致时以公告为准。</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>采购装备前：只看有对照组的实测</b>
+              <span>《盐碱滩与砂石路胎压实测》提供了三种路面数据，没有对照组的单品推荐片可跳过。</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>长期关注：订阅更新条目与社区讨论</b>
+              <span>冬季规则调整频繁，11 月以来已有两次限流变更，更新页与评论区通常比正片更早反映变化。</span>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="section-head">
+          <h2 id="faq-title">常见问答</h2>
+          <p class="section-desc">进入前最常被问到的六个问题</p>
+        </div>
+        <details class="faq-item">
+          <summary>无人区纪录短片一般多久更新一次？</summary>
+          <div class="faq-body">冬季档（11 月至次年 2 月）更新最密集，通常每周 2 至 3 条，因为低温环境下的营地与冰面素材集中在这段时间拍摄。夏季受雨季与保护区管控影响，更新会降到每周 1 条左右。</div>
+        </details>
+        <details class="faq-item">
+          <summary>可可西里和羌塘的线路纪录有什么区别？</summary>
+          <div class="faq-body">可可西里条目多为限流状态下的短周期穿越，强调许可核验与冰面判断；羌塘条目则以长距离、多日营地为主，重点在燃料配比与补给点间距。前者看流程，后者看耐力。</div>
+        </details>
+        <details class="faq-item">
+          <summary>第一次看这类内容，从哪一条开始比较好？</summary>
+          <div class="faq-body">从《罗布泊雅丹航拍解析》开始。它时长适中、无复杂后勤段落，能先建立对地貌与路面类型的认识，再去看营地实录和线路纪录会更容易理解。</div>
+        </details>
+        <details class="faq-item">
+          <summary>装备实测类条目怎么判断可信度？</summary>
+          <div class="faq-body">看三点：是否写明测试路面与气温、是否有对照组（不同胎压或不同产品）、是否保留失败记录。三项齐全的条目，结论通常可以直接参考。</div>
+        </details>
+        <details class="faq-item">
+          <summary>影像里提到的坐标和点位可以直接使用吗？</summary>
+          <div class="faq-body">不建议直接使用。保护区可通行区域随季节调整，11 月以来已有两次限流变更。坐标可作为理解线路走向的参考，实际进入前应以当季官方公告与现场指示为准。</div>
+        </details>
+        <details class="faq-item">
+          <summary>冬季单车进入无人区可行吗？</summary>
+          <div class="faq-body">社区讨论中多数回复建议至少双车同行，并列出三条曾发生单车受困的具体线路。若必须单车进入，需配备卫星通信设备、按 72 小时标准准备物资，并向管理方报备行程。</div>
+        </details>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="community" aria-labelledby="community-title">
+        <div class="section-head">
+          <h2 id="community-title">社区评论</h2>
+          <p class="section-desc">来自 14 位观众的观看反馈</p>
+        </div>
+        <div class="comment-grid">
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#e8a54b">风</span><span class="comment-name">风蚀地貌迷</span><span class="comment-time">今天 10:12</span></div><p>雅丹那集的垄脊走向讲得很清楚，之前一直不明白为什么不能横切，现在知道了。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#5fa8a0">夜</span><span class="comment-name">夜行越野</span><span class="comment-time">今天 09:48</span></div><p>营地实录第三集的耗油数据很有用，柴油暖风机整夜差不多 1.9 升，和我实测接近。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#c9603f">老</span><span class="comment-name">老张的皮卡</span><span class="comment-time">今天 08:35</span></div><p>胎压那集如果能补一个 1.6 bar 的对照就更完整了，现在只有 1.4 和 1.8。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#7d8c96">星</span><span class="comment-name">星河长曝</span><span class="comment-time">昨天 23:20</span></div><p>银河那集的星历表帮了大忙，12 月的升起时间直接照着拍。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#e8a54b">羚</span><span class="comment-name">羚羊观察者</span><span class="comment-time">昨天 21:05</span></div><p>藏羚观察距离那段说得克制，没有为了画面靠近，这点比很多片子好。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#5fa8a0">冰</span><span class="comment-name">冰面打孔人</span><span class="comment-time">昨天 19:41</span></div><p>卓乃湖那段等了 18 分钟才通行，看着平淡，但这就是真实流程。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#c9603f">盐</span><span class="comment-name">盐壳路常客</span><span class="comment-time">昨天 17:12</span></div><p>罗布泊那三处易陷区我中过其中一处，片子里标的位置基本准确。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#7d8c96">卫</span><span class="comment-name">卫星电话用户</span><span class="comment-time">11 月 24 日 22:30</span></div><p>救援预案的报点话术模板已经存下来了，三段式确实比临场组织语言靠谱。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#e8a54b">冻</span><span class="comment-name">冻土观察站</span><span class="comment-time">11 月 24 日 15:08</span></div><p>冻土丘的剖面动画做得不错，四个阶段一目了然，比静态图好懂。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#5fa8a0">阿</span><span class="comment-name">阿尔金山新手</span><span class="comment-time">11 月 23 日 20:55</span></div><p>第一次接触这类内容，从雅丹那集入门的，确实比直接看长片轻松。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#c9603f">双</span><span class="comment-name">双车同行</span><span class="comment-time">11 月 22 日 18:22</span></div><p>冬季单车进入还是不推荐，评论区列的三条受困线路我都听说过。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#7d8c96">导</span><span class="comment-name">导演系学生</span><span class="comment-time">11 月 21 日 14:03</span></div><p>创作者访谈里关于放弃素材那段讲得坦诚，很少有人在片子里承认撤退。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#e8a54b">高</span><span class="comment-name">高原炊事员</span><span class="comment-time">11 月 20 日 09:47</span></div><p>营地炊事顺序那段可以再细一点，比如先烧水还是先化雪的影响。</p></div>
+          <div class="comment"><div class="comment-head"><span class="avatar" style="background:#5fa8a0">限</span><span class="comment-name">限流关注者</span><span class="comment-time">11 月 19 日 11:36</span></div><p>限流公告更新得比正片快，这点做得对，规则变化确实比内容更要紧。</p></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="news-title">
+        <div class="section-head">
+          <h2 id="news-title">相关资讯</h2>
+          <p class="section-desc">近 30 天内的领域动态</p>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-permit25/600/400" width="600" height="400" loading="lazy" alt="可可西里保护区冬季限流公告牌">
+            <div class="news-body">
+              <h4>可可西里冬季限流新规 12 月生效</h4>
+              <time datetime="2026-11-25">11 月 25 日</time>
+              <p>每日进入车辆上限调整为 30 台，需提前 5 个工作日报备，冰雪路段须配备卫星通信设备。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-qiangtang18/600/400" width="600" height="400" loading="lazy" alt="羌塘南缘营地夜景与车辆灯">
+            <div class="news-body">
+              <h4>羌塘南缘营地实录系列完结第三集</h4>
+              <time datetime="2026-11-24">11 月 24 日</time>
+              <p>三集内容覆盖搭建、整夜保温与撤营流程，片尾附完整装备表与耗油数据。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-yadan09/600/400" width="600" height="400" loading="lazy" alt="罗布泊雅丹垄槽航拍">
+            <div class="news-body">
+              <h4>罗布泊雅丹航拍解析补充第三处易陷区</h4>
+              <time datetime="2026-11-23">11 月 23 日</time>
+              <p>新增盐壳薄层俯拍标注与绕行建议，片长增加 4 分 12 秒。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-tire11/600/400" width="600" height="400" loading="lazy" alt="越野车胎压表特写">
+            <div class="news-body">
+              <h4>盐碱滩胎压实测加入冻土路面数据</h4>
+              <time datetime="2026-11-22">11 月 22 日</time>
+              <p>补测 2.0 bar 方案，对比 1.6 bar 时冻土路面的打滑概率差异。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-antelope14/600/400" width="600" height="400" loading="lazy" alt="藏羚群在荒漠中移动">
+            <div class="news-body">
+              <h4>阿尔金山藏羚迁徙末期点位东移</h4>
+              <time datetime="2026-11-20">11 月 20 日</time>
+              <p>群体向东南移动约 12 公里，观察建议从 3 号点位调整至 5 号。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-community06/600/400" width="600" height="400" loading="lazy" alt="社区讨论冬季单车进入话题页面">
+            <div class="news-body">
+              <h4>社区讨论焦点：冬季单车进入是否可行</h4>
+              <time datetime="2026-11-18">11 月 18 日</time>
+              <p>多数回复建议双车同行，并列出三条曾发生单车受困的具体线路。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section" id="related" aria-labelledby="related-title">
+        <div class="section-head">
+          <h2 id="related-title">相关推荐</h2>
+          <p class="section-desc">延伸方向与相邻主题</p>
+        </div>
+        <div class="tag-index">
+          <a href="/#featured">盐壳路面驾驶</a>
+          <a href="/#featured">冰面厚度判断</a>
+          <a href="/#featured">高海拔炊事顺序</a>
+          <a href="/#featured">卫星报点格式</a>
+          <a href="/#featured">冻胀作用</a>
+          <a href="/#featured">藏野驴观察</a>
+          <a href="/#featured">赤道仪调平</a>
+          <a href="/#featured">72 小时物资配置</a>
+        </div>
+      </section>
+
+      <!-- 11. 榜单与时间线 -->
+      <section class="section" id="ranking" aria-labelledby="ranking-title">
+        <div class="section-head">
+          <h2 id="ranking-title">本月热度榜与条目时间线</h2>
+          <p class="section-desc">11 月 1 日至 25 日</p>
+        </div>
+        <div class="panel" style="margin-bottom:18px">
+          <ol class="rank-list">
+            <li><div><div class="rank-name">羌塘南缘 11 月营地实录</div><div class="rank-sub">营地实录 · 三集</div></div><span class="rank-score">9.6</span></li>
+            <li><div><div class="rank-name">可可西里冬季线路：卓乃湖西侧</div><div class="rank-sub">穿越线路</div></div><span class="rank-score">9.4</span></li>
+            <li><div><div class="rank-name">罗布泊雅丹航拍解析</div><div class="rank-sub">地貌解析</div></div><span class="rank-score">9.1</span></li>
+            <li><div><div class="rank-name">盐碱滩与砂石路胎压实测</div><div class="rank-sub">装备实测</div></div><span class="rank-score">8.9</span></li>
+            <li><div><div class="rank-name">阿尔金山藏羚迁徙末期观察</div><div class="rank-sub">野生动物</div></div><span class="rank-score">8.7</span></li>
+            <li><div><div class="rank-name">无人区救援预案推演</div><div class="rank-sub">应急方案</div></div><span class="rank-score">8.5</span></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <ul class="timeline">
+            <li><time datetime="2026-11-25">11 月 25 日</time><b>可可西里冬季限流新规发布</b><span>每日车辆上限 30 台，报备提前 5 个工作日。</span></li>
+            <li><time datetime="2026-11-24">11 月 24 日</time><b>营地实录系列完结</b><span>三集内容与装备表同步上线。</span></li>
+            <li><time datetime="2026-11-19">11 月 19 日</time><b>胎压实测条目上线</b><span>首次公开冻土路面数据。</span></li>
+            <li><time datetime="2026-11-13">11 月 13 日</time><b>创作者访谈发布</b><span>谈拍摄节奏与撤退决策。</span></li>
+            <li><time datetime="2026-11-03">11 月 3 日</time><b>秋季档影像整理完成</b><span>共归档 22 条夏季拍摄素材。</span></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 右辅助栏 -->
+    <aside class="sidebar-right" aria-label="辅助信息">
+      <div class="side-card">
+        <div class="side-title">站内热榜</div>
+        <ul class="hot-list">
+          <li><span class="hot-idx">1</span><div><b>羌塘南缘营地实录 第 3 集</b><span>3 小时前更新</span></div></li>
+          <li><span class="hot-idx">2</span><div><b>可可西里冬季线路</b><span>昨天上线</span></div></li>
+          <li><span class="hot-idx">3</span><div><b>罗布泊雅丹航拍解析</b><span>11 月 23 日修订</span></div></li>
+          <li><span class="hot-idx">4</span><div><b>盐碱滩胎压实测</b><span>11 月 23 日补测</span></div></li>
+          <li><span class="hot-idx">5</span><div><b>无人区救援预案推演</b><span>11 月 22 日更新</span></div></li>
+          <li><span class="hot-idx">6</span><div><b>冻土丘是怎么长出来的</b><span>11 月 16 日修订</span></div></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <div class="side-title">拍摄条件速查</div>
+        <ul class="channel-list">
+          <li><a href="/#updates">平均海拔 <span>4,600 m</span></a></li>
+          <li><a href="/#updates">11 月夜温 <span>−22 ℃</span></a></li>
+          <li><a href="/#updates">建议同行车数 <span>≥2</span></a></li>
+          <li><a href="/#updates">物资自持 <span>72 h</span></a></li>
+        </ul>
+      </div>
+      <div class="quote-card">
+        “拍无人区第七年，最有用的一条经验是：当你不确定冰面够不够厚的时候，答案通常是不够。”
+        <b>—— 创作者访谈 · 11 月 13 日</b>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-name">二亚洲无人区</div>
+      <p>荒野穿越影像与无人区纪录短片厂牌。记录线路、地貌、营地与装备在极端环境下的真实表现，标注每一条影像的拍摄时间与通行条件。</p>
+    </div>
+    <div class="footer-col">
+      <h4>内容频道</h4>
+      <a href="/#featured">穿越线路纪录</a>
+      <a href="/#featured">地质地貌解析</a>
+      <a href="/#featured">营地与后勤</a>
+      <a href="/#featured">越野装备实测</a>
+    </div>
+    <div class="footer-col">
+      <h4>更多方向</h4>
+      <a href="/#featured">野生动物观察</a>
+      <a href="/#featured">星空与长曝光</a>
+      <a href="/#featured">救援与应急预案</a>
+      <a href="/#featured">创作者访谈</a>
+    </div>
+    <div class="footer-col">
+      <h4>社区与说明</h4>
+      <a href="/#updates">最新更新</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#community">社区评论</a>
+      <a href="/#ranking">热度榜与时间线</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 二亚洲无人区 · 影像内容与条目信息为品牌社区整理</span>
+    <span>所有拍摄数据均标注采集日期，实际进入请以当季官方公告为准</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('siteSearch');
+  var reset = document.getElementById('resetSearch');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cardGrid .card'));
+  var empty = document.getElementById('searchEmpty');
+
+  function runFilter(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      document.body.classList.remove('searching');
+      empty.classList.remove('show');
+      cards.forEach(function(c){ c.removeAttribute('data-hidden'); });
+      return;
+    }
+    document.body.classList.add('searching');
+    var visible = 0;
+    cards.forEach(function(c){
+      var text = (c.textContent + ' ' + (c.getAttribute('data-keywords') || '')).toLowerCase();
+      if(text.indexOf(q) > -1){
+        c.removeAttribute('data-hidden');
+        visible++;
+      }else{
+        c.setAttribute('data-hidden','1');
+      }
+    });
+    empty.classList.toggle('show', visible === 0);
+  }
+
+  input.addEventListener('input', runFilter);
+  reset.addEventListener('click', function(){
+    input.value = '';
+    runFilter();
+    input.focus();
+  });
+})();
+</script>
+</body>
+                                    </html>
